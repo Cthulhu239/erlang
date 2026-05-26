@@ -29,4 +29,5 @@ main() ->
     %% CRITICAL CHANGE: 
     %% Instead of registering a background pid, we pull the execution of 'linked' 
     %% directly into the current shell process context.
+    process_flag(trap_exit, true), %trap exit prevents the shell from crashing when the linked process dies
     linked().
