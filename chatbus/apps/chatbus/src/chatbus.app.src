@@ -1,0 +1,19 @@
+{application, chatbus,
+ [{description, "An Erlang Chatbus Application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, {chatbus_app, []}},
+  {applications,
+   [kernel,
+    stdlib,
+    cowboy,  %% Added
+    lager,   %% Added
+    jsx,     %% Added
+    erlbus,  %% Added
+    sync     %% Added
+   ]},
+  {env,[]},
+  {modules, []},
+  {licenses, ["Apache-2.0"]},
+  {links, []}
+ ]}.
